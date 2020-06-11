@@ -1,0 +1,39 @@
+.photos {
+  width: 100%;
+
+  &__lists {
+    display: flex;
+    flex-flow: row wrap;
+
+    &__list {
+      flex: auto;
+      width: 200px;
+      height: 100%;
+      margin: map-get($margins, m2);
+      position: relative;
+      opacity: 0.8;
+      transition: opacity 0.4s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &__img {
+        box-shadow: 5px 10px 11px 0px rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: auto;
+      }
+
+      &__date {
+        position: absolute;
+        bottom: map-get($margins, m1);
+        padding: map-get($margins, m1);
+        right: 0;
+        background-color: map-get($colors, shadow);
+        color: map-get($colors, white);
+        border-top-left-radius: $radius;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+const ActionsSearch = {
+  FETCH_AUTOCOMPLITE: 'FETCH_AUTOCOMPLITE',
+  FETCH_SEARCH_UNSPLASH: 'FETCH_SEARCH_UNSPLASH',
+}
+
+const MutationsSearch = {
+  SET_AUTOCOMPLITE: 'SET_AUTOCOMPLITE',
+  SET_SEARCH_UNSPLASH: 'SET_SEARCH_UNSPLASH',
+}
+
+const GettersSearch = {
+  GET__AUTOCOMPLITE: 'GET__AUTOCOMPLITE',
+  GET_SEARCH_LOADER: 'GET_SEARCH_LOADER',
+}
+
+export { ActionsSearch, MutationsSearch, GettersSearch }

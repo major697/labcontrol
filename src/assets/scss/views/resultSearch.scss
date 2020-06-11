@@ -1,0 +1,12 @@
+.cnt-result {
+  height: 100%;
+  margin: map-get($margins, m4);
+
+  &__title {
+    font-size: map-get($fontSizes, large);
+    color: map-get($colors, gray);
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: map-get($margins, m5);
+  }
+}

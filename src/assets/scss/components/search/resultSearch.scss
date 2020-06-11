@@ -1,0 +1,35 @@
+.result-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid map-get($colors, shadow);
+  border-top: 0;
+  border-radius: $radius;
+  background-color: map-get($colors, transWhite);
+  max-height: 300px;
+  overflow-y: auto;
+  color: map-get($colors, gray);
+
+  &--result {
+    background-color: hsla(0, 0%, 100%, 0.95);
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &__list {
+    border-bottom: 1px solid map-get($colors, shadow);
+    padding: map-get($margins, m2);
+    cursor: pointer;
+
+    &--empty {
+      cursor: default;
+    }
+
+    &:hover {
+      background-color: map-get($colors, gray);
+      color: map-get($colors, white);
+    }
+  }
+}

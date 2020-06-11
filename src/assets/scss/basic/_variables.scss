@@ -1,0 +1,28 @@
+@import './fonts';
+
+$fontBook: 'AvenirBook';
+$radius: 4px;
+
+$fontSizes: (
+  small: 12px,
+  medium: 16px,
+  large: 22px,
+);
+
+$margins: (
+  m1: 5px,
+  m2: 10px,
+  m3: 15px,
+  m4: 20px,
+  m5: 30px,
+  m6: 45px,
+  m7: 60px,
+);
+
+$colors: (
+  shadow: hsla(0, 0%, 30%, 0.5),
+  gray: hsl(0, 0%, 30%),
+  transGray: hsla(0, 0%, 30%, 0.2),
+  white: hsl(0, 0%, 100%),
+  transWhite: hsla(0, 0%, 100%, 0.2),
+);
