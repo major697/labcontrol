@@ -1,12 +1,25 @@
 .cnt-result {
-  height: 100%;
-  margin: map-get($margins, m4);
+  padding: map-get($margins, m7);
+  min-height: 100%;
+  background-color: #1f1f1f;
 
   &__title {
     font-size: map-get($fontSizes, large);
-    color: map-get($colors, gray);
+    color: map-get($colors, transWhite);
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: map-get($margins, m5);
+
+    @media (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__loader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }

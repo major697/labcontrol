@@ -1,0 +1,63 @@
+.modal-photo {
+  &__user {
+    display: flex;
+
+    &__img {
+      border-radius: 50%;
+      width: 32px;
+      height: auto;
+    }
+
+    &__cnt-user {
+      display: flex;
+      flex-direction: column;
+      color: map-get($colors, transWhite);
+      margin-left: map-get($margins, m2);
+
+      &__link {
+        text-decoration: none;
+        color: map-get($colors, white);
+        transition: color 0.2s ease-in;
+
+        &:hover {
+          color: map-get($colors, transWhite);
+        }
+      }
+
+      &__desc {
+        font-style: italic;
+        font-size: map-get($fontSizes, small);
+      }
+    }
+  }
+
+  &__photo {
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    justify-content: center;
+    margin: map-get($margins, m3) 0;
+
+    &__img {
+      height: auto;
+      width: auto;
+      max-width: 1200px;
+      object-fit: contain;
+    }
+  }
+
+  &__desc {
+    display: flex;
+    justify-content: space-around;
+    color: map-get($colors, white);
+
+    &__icon {
+      display: flex;
+      align-items: center;
+    }
+
+    &--second {
+      color: map-get($colors, transWhite);
+    }
+  }
+}

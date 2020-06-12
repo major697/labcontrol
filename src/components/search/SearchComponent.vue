@@ -9,6 +9,7 @@
         type="text"
         class="cnt-search__input"
         placeholder="Search photo"
+        autofocus
         @keyup="search"
       />
       <div v-if="loaderSearch" class="cnt-search__loader">

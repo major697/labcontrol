@@ -4,8 +4,10 @@
     <div class="cnt-result__title">
       {{ $route.params.query }}
     </div>
-    <LoaderComponent v-if="loader" :size="120" :border-size="16" />
-    <ListPhotosComponent />
+    <div v-if="loader" class="cnt-result__loader">
+      <LoaderComponent :size="120" :border-size="16" />
+    </div>
+    <ListPhotosComponent v-else />
   </div>
 </template>
 
