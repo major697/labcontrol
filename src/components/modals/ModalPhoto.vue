@@ -29,7 +29,7 @@
           {{ moment(photo.created_at).format('MMMM') }}
           {{ moment(photo.created_at).format('YYYY') }}
         </div>
-        <div class="modal-photo__desc__icon">
+        <div v-if="photo.user.location" class="modal-photo__desc__icon">
           <img src="@/assets/img/location.png" alt="" />
           {{ photo.user.location }}
         </div>
